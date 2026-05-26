@@ -57,6 +57,7 @@
             border: 1px solid #eee;
             display: block;
             transition: transform 0.2s;
+            background-color: #f9f9f9;
         }
         .cert-item a img:hover { transform: scale(1.05); }
         
@@ -74,8 +75,8 @@
     <header>
         <h1>黃翊珍</h1>
         <p class="tagline">AI 數位轉型實踐者</p>
-        <!-- 個人照片：直接讀取同一層的檔案 -->
-        <img src="image_6d1f4c.png" alt="黃翊珍" class="profile-img" onerror="this.style.display='none'">
+        <!-- 個人照片：設定為直接讀取同層資料夾檔案 -->
+        <img src="image_6d1f4c.png" alt="黃翊珍" class="profile-img" onerror="this.onerror=null; this.src='https://placehold.co/120x120/8b7355/white?text=Profile'">
     </header>
 
     <section>
@@ -94,22 +95,24 @@
         <div class="card">
             <strong>專業證照</strong>
             <div class="img-grid">
-                <!-- 證照照片：直接讀取同一層的檔案 -->
                 <div class="cert-item">
+                    <!-- Excel 證照 -->
                     <a href="Cert14632031728_page-0001.jpg" target="_blank">
-                        <img src="Cert14632031728_page-0001.jpg" alt="Excel Expert">
+                        <img src="Cert14632031728_page-0001.jpg" alt="Excel Expert" onerror="this.onerror=null; this.src='https://placehold.co/150x100/eeeeee/666666?text=Excel'">
                     </a>
                     <div class="cert-name">Excel Expert<br>進階專家級</div>
                 </div>
                 <div class="cert-item">
+                    <!-- Word 證照 -->
                     <a href="Cert91832036142_page-0001.jpg" target="_blank">
-                        <img src="Cert91832036142_page-0001.jpg" alt="Word Expert">
+                        <img src="Cert91832036142_page-0001.jpg" alt="Word Expert" onerror="this.onerror=null; this.src='https://placehold.co/150x100/eeeeee/666666?text=Word'">
                     </a>
                     <div class="cert-name">Word Expert<br>進階專家級</div>
                 </div>
                 <div class="cert-item">
+                    <!-- PowerPoint 證照 -->
                     <a href="Cert76732033848_page-0001.jpg" target="_blank">
-                        <img src="Cert76732033848_page-0001.jpg" alt="PowerPoint Associate">
+                        <img src="Cert76732033848_page-0001.jpg" alt="PowerPoint Associate" onerror="this.onerror=null; this.src='https://placehold.co/150x100/eeeeee/666666?text=PowerPoint'">
                     </a>
                     <div class="cert-name">PowerPoint Associate<br>基礎級</div>
                 </div>
